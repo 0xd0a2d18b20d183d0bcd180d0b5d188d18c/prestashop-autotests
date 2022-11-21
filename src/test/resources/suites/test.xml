@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name="Тестовый" verbose="10" parallel="tests" thread-count="1">
+
+    <parameter name="rootLink" value="http://demo.prestashop.com"/>
+    <parameter name="browser" value="firefox"/>
+
+    <test name="Quantity Test">
+        <classes>
+            <class name="tests.QuantityTests"/>
+        </classes>
+    </test>
+
+</suite>
